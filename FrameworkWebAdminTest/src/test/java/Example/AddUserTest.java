@@ -1,4 +1,4 @@
-package com.webadmin.qa.testcases;
+package Example;
 
 import java.util.List;
 import java.util.Map;

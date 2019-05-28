@@ -27,6 +27,9 @@ public class AddUserPage extends Testbase {
 	@FindBy(id="btnSave")
 	WebElement UserSave;
 	
+	@FindBy(id="btnAddMoreUser")
+	WebElement Addmoreuser;
+	
 	
 	public AddUserPage() {
 		PageFactory.initElements(driver, this);
@@ -44,6 +47,12 @@ public class AddUserPage extends Testbase {
 	
 	public void ClickSaveOnAddUser() {
 		UserSave.click();
+		
+	}
+	
+	public void AddMoreUser() {
+		Addmoreuser.click();
+	 
 		
 	}
 	

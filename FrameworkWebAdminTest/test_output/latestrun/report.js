@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:/C:/Users/Vinoth/git/repository1/FrameworkWebAdminTest/src/test/java/com/webadmin/qa/featurefile/AddUserTest.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:/C:/Users/Vinoth/git/repository1/FrameworkWebAdminTest/src/test/java/Example/AddUserTest.feature");
 formatter.feature({
   "name": "Adding new user",
   "description": "",
@@ -17,7 +17,7 @@ formatter.match({
   "location": "AddUserTest.click_the_Adduser_button()"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat com.webadmin.qa.testcases.AddUserTest.click_the_Adduser_button(AddUserTest.java:40)\r\n\tat ✽.click the Adduser button(file:/C:/Users/Vinoth/git/repository1/FrameworkWebAdminTest/src/test/java/com/webadmin/qa/featurefile/AddUserTest.feature:6)\r\n",
+  "error_message": "java.lang.NullPointerException\r\n\tat Example.AddUserTest.click_the_Adduser_button(AddUserTest.java:40)\r\n\tat ✽.click the Adduser button(file:/C:/Users/Vinoth/git/repository1/FrameworkWebAdminTest/src/test/java/Example/AddUserTest.feature:6)\r\n",
   "status": "failed"
 });
 formatter.step({

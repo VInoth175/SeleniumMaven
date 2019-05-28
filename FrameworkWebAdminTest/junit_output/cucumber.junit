@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.004844">
-<testcase classname="Adding new user" name="Verify the add user scenario" time="10.004844">
-<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.webadmin.qa.testcases.AddUserTest.click_the_Adduser_button(AddUserTest.java:40)&#13;&#10;&#9;at ✽.click the Adduser button(file:/C:/Users/Vinoth/git/repository1/FrameworkWebAdminTest/src/test/java/com/webadmin/qa/featurefile/AddUserTest.feature:6)&#13;&#10;"><![CDATA[Given click the Adduser button..............................................failed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.013455">
+<testcase classname="Adding new user" name="Verify the add user scenario" time="10.013455">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at Example.AddUserTest.click_the_Adduser_button(AddUserTest.java:40)&#13;&#10;&#9;at ✽.click the Adduser button(file:/C:/Users/Vinoth/git/repository1/FrameworkWebAdminTest/src/test/java/Example/AddUserTest.feature:6)&#13;&#10;"><![CDATA[Given click the Adduser button..............................................failed
 Then Enter the user detail..................................................skipped
 
 StackTrace:
 java.lang.NullPointerException
-	at com.webadmin.qa.testcases.AddUserTest.click_the_Adduser_button(AddUserTest.java:40)
-	at ✽.click the Adduser button(file:/C:/Users/Vinoth/git/repository1/FrameworkWebAdminTest/src/test/java/com/webadmin/qa/featurefile/AddUserTest.feature:6)
+	at Example.AddUserTest.click_the_Adduser_button(AddUserTest.java:40)
+	at ✽.click the Adduser button(file:/C:/Users/Vinoth/git/repository1/FrameworkWebAdminTest/src/test/java/Example/AddUserTest.feature:6)
 ]]></failure>
 </testcase>
 </testsuite>

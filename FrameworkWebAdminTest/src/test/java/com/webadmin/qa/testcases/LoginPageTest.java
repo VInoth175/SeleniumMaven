@@ -24,7 +24,7 @@ public class LoginPageTest extends Testbase {
 		
 	}
 	
-	@Before
+	
 	public void setup() {
 		initilialization();
 	}

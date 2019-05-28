@@ -55,10 +55,10 @@ public class AdminPageTest extends Testbase{
 		
 		}
 		
-//		@Then("Close the browser")
-//		public void close_the_browser() {
-//			driver.quit();
-//		
-//		}
+		@Then("Close the browser")
+		public void close_the_browser() {
+			driver.quit();
+		
+		}
 
 }

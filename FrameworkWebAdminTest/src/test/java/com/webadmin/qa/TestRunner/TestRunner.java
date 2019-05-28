@@ -10,9 +10,9 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions
 	//features means where the test case and scenarios where written
-	(features = "C:\\Selenium\\Project\\FrameworkWebAdminTest\\src\\test\\java\\Example\\AddUser.feature", 
+	(features = "C:\\Users\\Vinoth\\git\\repository1\\FrameworkWebAdminTest\\src\\test\\java\\com\\webadmin\\qa\\featurefile", 
 	//This is for step definition where the feature files methods are written
-	glue= {"Example"}, 
+	glue= {"com.webadmin.qa.testcases"}, 
 	//if dryRun is true, it will verify whether the Feature files steps and methods are matching. If not matching, it wont execute the test case.
 	//If we give false, it will execute even the steps and methods are not matching
 	dryRun = false,

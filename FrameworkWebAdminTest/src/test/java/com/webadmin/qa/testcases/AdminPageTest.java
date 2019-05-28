@@ -1,4 +1,4 @@
-package com.webadmin.adminPageTestcase;
+package com.webadmin.qa.testcases;
 
 import org.junit.Assert;
 import com.webadmin.qa.base.Testbase;
@@ -55,10 +55,10 @@ public class AdminPageTest extends Testbase{
 		
 		}
 		
-		@Then("Close the browser")
-		public void close_the_browser() {
-			driver.quit();
-		
-		}
+//		@Then("Close the browser")
+//		public void close_the_browser() {
+//			driver.quit();
+//		
+//		}
 
 }

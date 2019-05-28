@@ -18,6 +18,9 @@ public class AddUserPage extends Testbase {
 	@FindBy(id="emailAddress")
 	WebElement email;
 	
+	@FindBy(id="phoneNumber")
+	WebElement phone;
+	
 	@FindBy(id="state")
 	WebElement state;
 	
@@ -35,10 +38,11 @@ public class AddUserPage extends Testbase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void enteruserdetailadmin(String FirstName, String LastName , String Email, String Statename, String UserRole) {
+	public void enteruserdetailadmin(String FirstName, String LastName , String Email, String Phone, String Statename, String UserRole) {
 		firstname.sendKeys(FirstName);
 		lastname.sendKeys(LastName);
 		email.sendKeys(Email);
+		phone.sendKeys(Phone);
 		Select select = new Select(state);
 		select.selectByVisibleText(Statename);
 		Select select1 = new Select(userrole);

@@ -25,7 +25,7 @@ public class AddUserTest extends Testbase {
 	
 	
 	
-	
+	@Before
 	public void OpenBrowser() {
 		initilialization();
 		loginpage = new LoginPage();
@@ -36,7 +36,7 @@ public class AddUserTest extends Testbase {
 	
 	@Given("click the Adduser button")
 	public void click_the_Adduser_button() throws Exception {
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 		adduserpage = adminpage.clickadduser();
 		
 
@@ -49,7 +49,7 @@ public class AddUserTest extends Testbase {
 	 for(Map<String, String> userDetail: UserDetails) {
 		 
 		 	Thread.sleep(3000);
-			adduserpage.enteruserdetailadmin(userDetail.get("FirstName"), userDetail.get("LastName"), userDetail.get("Email@"), userDetail.get("State"), userDetail.get("UserType") );
+			adduserpage.enteruserdetailadmin(userDetail.get("FirstName"), userDetail.get("LastName"), userDetail.get("Email@"),userDetail.get("Phone#") ,userDetail.get("State"), userDetail.get("UserType") );
 			adduserpage.ClickSaveOnAddUser();
 			adduserpage.AddMoreUser();
 			Thread.sleep(5000);

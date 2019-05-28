@@ -1,2 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" time="0"/>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="83.444494">
+<testcase classname="Adding new user" name="Verify the add user scenario" time="47.873749">
+<failure message="org.openqa.selenium.NoSuchElementException: Cannot locate element with text: admin&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'WINDOWS-T924NNG', ip: '10.127.14.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'&#10;Driver info: driver.version: unknown&#13;&#10;&#9;at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)&#13;&#10;&#9;at com.webadmin.qa.page.AddUserPage.enteruserdetailadmin(AddUserPage.java:42)&#13;&#10;&#9;at com.webadmin.qa.testcases.AddUserTest.enter_the_user_detail(AddUserTest.java:52)&#13;&#10;&#9;at ✽.Enter the user detail(file:AddUserTest.feature:7)&#13;&#10;"><![CDATA[Given click the Adduser button..............................................passed
+Then Enter the user detail..................................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate element with text: admin
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WINDOWS-T924NNG', ip: '10.127.14.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.webadmin.qa.page.AddUserPage.enteruserdetailadmin(AddUserPage.java:42)
+	at com.webadmin.qa.testcases.AddUserTest.enter_the_user_detail(AddUserTest.java:52)
+	at ✽.Enter the user detail(file:AddUserTest.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="Verify the Admin Page" name="Validate Admin page" time="35.570745">
+<system-out><![CDATA[Given Open Web Admin website................................................passed
+Then Validate the title.....................................................passed
+Then Validate the Search By Name option.....................................passed
+Then Validate Search By CDL option..........................................passed
+Then Validate OnCommand logo................................................passed
+Then Close the browser......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

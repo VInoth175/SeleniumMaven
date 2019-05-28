@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-05-28T21:24:55.111Z",
+        "start_timestamp": "2019-05-28T22:23:02.540Z",
         "line": 3,
         "name": "Verify the add user scenario",
         "description": "",
@@ -13,8 +13,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\r\n\tat com.webadmin.qa.testcases.AddUserTest.click_the_Adduser_button(AddUserTest.java:40)\r\n\tat ✽.click the Adduser button(file:/C:/Users/Vinoth/git/repository1/FrameworkWebAdminTest/src/test/java/com/webadmin/qa/featurefile/AddUserTest.feature:6)\r\n",
-              "duration": 10000396515,
+              "error_message": "java.lang.NullPointerException\r\n\tat Example.AddUserTest.click_the_Adduser_button(AddUserTest.java:40)\r\n\tat ✽.click the Adduser button(file:/C:/Users/Vinoth/git/repository1/FrameworkWebAdminTest/src/test/java/Example/AddUserTest.feature:6)\r\n",
+              "duration": 10009059543,
               "status": "failed"
             },
             "line": 6,
@@ -26,7 +26,7 @@
           },
           {
             "result": {
-              "duration": 33564,
+              "duration": 31857,
               "status": "skipped"
             },
             "line": 7,
@@ -75,7 +75,7 @@
     "description": "",
     "id": "adding-new-user",
     "keyword": "Feature",
-    "uri": "file:/C:/Users/Vinoth/git/repository1/FrameworkWebAdminTest/src/test/java/com/webadmin/qa/featurefile/AddUserTest.feature",
+    "uri": "file:/C:/Users/Vinoth/git/repository1/FrameworkWebAdminTest/src/test/java/Example/AddUserTest.feature",
     "tags": []
   }
 ]

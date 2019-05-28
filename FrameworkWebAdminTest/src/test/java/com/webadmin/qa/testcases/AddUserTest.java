@@ -23,9 +23,7 @@ public class AddUserTest extends Testbase {
 	AdminPage adminpage;
 	AddUserPage adduserpage;
 	
-	
-	
-	
+		
 	public void OpenBrowser() {
 		initilialization();
 		loginpage = new LoginPage();

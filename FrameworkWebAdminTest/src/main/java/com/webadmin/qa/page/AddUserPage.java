@@ -34,11 +34,18 @@ public class AddUserPage extends Testbase {
 	WebElement Addmoreuser;
 	
 	
+	@FindBy(id="VehicleType")
+	WebElement vehicletype;
+	
+	@FindBy(id="licenseNo")
+	WebElement licenseNo;
+	
 	public AddUserPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void enteruserdetailadmin(String FirstName, String LastName , String Email, String Phone, String Statename, String UserRole) {
+	public void enteruserdetailadmin(String FirstName, String LastName , String Email, String Phone, 
+									String Statename, String UserRole, String Vehicletype, String Licenseno) {
 		firstname.sendKeys(FirstName);
 		lastname.sendKeys(LastName);
 		email.sendKeys(Email);
@@ -46,7 +53,27 @@ public class AddUserPage extends Testbase {
 		Select select = new Select(state);
 		select.selectByVisibleText(Statename);
 		Select select1 = new Select(userrole);
-		select1.selectByVisibleText(UserRole);		
+		
+		if (select1.equals("Admin")) {
+			select1.selectByVisibleText(UserRole);
+		}
+		else if 
+			(select1.equals("Driver")) {
+			
+			Select select3 = new Select(vehicletype);
+			select3.selectByVisibleText(Vehicletype);
+			licenseNo.sendKeys(Licenseno);
+			System.out.println("Print");
+			
+			
+		}
+			
+		
+		
+				
+		
+		
+		
 	}
 	
 	public void ClickSaveOnAddUser() {

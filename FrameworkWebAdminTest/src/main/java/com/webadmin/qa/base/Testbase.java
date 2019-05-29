@@ -28,7 +28,10 @@ public class Testbase {
 		try {
 			//reading the properties file located in property package
 			prop = new Properties(); //Initializing the prop variable
-			FileInputStream ip = new FileInputStream("C:\\Selenium\\Project\\FrameworkWebAdminTest\\src\\main\\java\\com\\webadmin\\qa\\config\\config.properties");
+			
+			//C:\Users\Vinoth\git\repository1\FrameworkWebAdminTest\src\main\java\com\webadmin\qa\config\config.properties
+			//C:\\Selenium\\Project\\FrameworkWebAdminTest\\src\\main\\java\\com\\webadmin\\qa\\config\\config.properties
+			FileInputStream ip = new FileInputStream("C:\\Users\\Vinoth\\git\\repository1\\FrameworkWebAdminTest\\src\\main\\java\\com\\webadmin\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -62,6 +65,7 @@ public class Testbase {
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
 		driver.get(prop.getProperty("url"));
+	//	System.out.println("Test");
 		
 		
 	}

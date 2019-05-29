@@ -2,8 +2,6 @@ package com.webadmin.qa.TestRunner;
 
 import org.junit.runner.RunWith;
 
-import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
-
 import cucumber.api.CucumberOptions;
 
 //Make sure to add this library otherwise "Cucumner.class" will through the error

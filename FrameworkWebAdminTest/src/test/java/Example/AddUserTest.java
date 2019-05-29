@@ -49,7 +49,9 @@ public class AddUserTest extends Testbase {
 	 for(Map<String, String> userDetail: UserDetails) {
 		 
 		 	Thread.sleep(3000);
-			adduserpage.enteruserdetailadmin(userDetail.get("FirstName"), userDetail.get("LastName"), userDetail.get("Email@"),userDetail.get("Phone#") ,userDetail.get("State"), userDetail.get("UserType") );
+			adduserpage.enteruserdetailadmin(userDetail.get("FirstName"), userDetail.get("LastName"), userDetail.get("Email@"),
+											userDetail.get("Phone#") ,userDetail.get("State"), userDetail.get("UserType"),
+											userDetail.get("VehicleType"),userDetail.get("LicenseNo") );
 			adduserpage.ClickSaveOnAddUser();
 			adduserpage.AddMoreUser();
 			Thread.sleep(5000);

@@ -36,7 +36,7 @@ public class AddUserTest extends Testbase {
 	
 	@Given("click the Adduser button")
 	public void click_the_Adduser_button() throws Exception {
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		adduserpage = adminpage.clickadduser();
 		
 

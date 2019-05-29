@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 
 @CucumberOptions
 	//features means where the test case and scenarios where written
-	(features = "C:\\Users\\Vinoth\\git\\repository1\\FrameworkWebAdminTest\\src\\test\\java\\Example\\AddUserTest.feature", 
+	(features = "C:\\Users\\Vinoth\\git\\repository1\\FrameworkWebAdminTest\\src\\test\\java\\Example", 
 	//This is for step definition where the feature files methods are written
 	glue= {"Example"}, 
 	//if dryRun is true, it will verify whether the Feature files steps and methods are matching. If not matching, it wont execute the test case.

@@ -53,26 +53,7 @@ public class AddUserPage extends Testbase {
 		Select select = new Select(state);
 		select.selectByVisibleText(Statename);
 		Select select1 = new Select(userrole);
-		
-		if (select1.equals("Admin")) {
-			select1.selectByVisibleText(UserRole);
-		}
-		else if 
-			(select1.equals("Driver")) {
-			
-			Select select3 = new Select(vehicletype);
-			select3.selectByVisibleText(Vehicletype);
-			licenseNo.sendKeys(Licenseno);
-			System.out.println("Print");
-			
-			
-		}
-			
-		
-		
-				
-		
-		
+		select1.selectByVisibleText(UserRole);			
 		
 	}
 	

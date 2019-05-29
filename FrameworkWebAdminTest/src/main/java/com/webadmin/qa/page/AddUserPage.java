@@ -45,7 +45,7 @@ public class AddUserPage extends Testbase {
 	}
 	
 	public void enteruserdetailadmin(String FirstName, String LastName , String Email, String Phone, 
-									String Statename, String UserRole, String Vehicletype, String Licenseno) {
+									String Statename, String UserRole) {
 		firstname.sendKeys(FirstName);
 		lastname.sendKeys(LastName);
 		email.sendKeys(Email);

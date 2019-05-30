@@ -17,20 +17,21 @@ public class LoginPageTest extends Testbase {
 	LoginPage loginpage;
 	AdminPage adminpage;
 	
-	//Create the Constructor of this class
-	public  LoginPageTest() {
-		//It will call the super call constructor: Testbase is our super class
-		super();
-		
-	}
-	
-	
-	public void setup() {
-		initilialization();
-	}
+//	//Create the Constructor of this class
+//	public  LoginPageTest() {
+//		//It will call the super call constructor: Testbase is our super class
+//		super();
+//		
+//	}
+//	
+//	
+//	public void setup() {
+//		initilialization();
+//	}
 	
 	@Given("Access and login to the WebAdmin")
 	public void Access_and_login_to_the_WebAdmin() {
+		initilialization();
 		//Creating loginpage object for "LoginPage()" constructor
 		loginpage = new LoginPage();
 	}

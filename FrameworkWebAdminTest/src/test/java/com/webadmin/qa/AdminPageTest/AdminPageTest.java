@@ -30,7 +30,7 @@ public class AdminPageTest extends Testbase{
 		// Here we are initialize the browser and login to the web site
 		@Then("Validate the title")
 		public void validate_the_title() throws Exception {
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 			String title = adminpage.TitleOfthepageAdmin();
 			System.out.println(title);
 			Assert.assertEquals(title,"Administrative User Management");	

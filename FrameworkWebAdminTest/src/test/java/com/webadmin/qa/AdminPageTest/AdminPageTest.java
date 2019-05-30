@@ -1,4 +1,4 @@
-package com.webadmin.qa.testcases;
+package com.webadmin.qa.AdminPageTest;
 
 import org.junit.Assert;
 import com.webadmin.qa.base.Testbase;

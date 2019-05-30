@@ -1,4 +1,4 @@
-package Example;
+package com.webadmin.qa.AddUserTest;
 
 import java.util.List;
 import java.util.Map;

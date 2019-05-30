@@ -9,10 +9,6 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-//@ExtendedCucumberOptions(jsonReport = "json_output/cucumber.json",
-//overviewReport = true,
-//outputFolder = "target")
-
 @CucumberOptions
 	//features means where the test case and scenarios where written
 	(features = "C:\\Users\\Vinoth\\git\\repository1\\FrameworkWebAdminTest\\src\\test\\java\\Example", 

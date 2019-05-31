@@ -2,10 +2,13 @@ package com.webadmin.qa.page;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.webadmin.qa.base.Testbase;
 import com.webadmin.qa.util.TestUtil;
@@ -67,7 +70,8 @@ public class AdminPage extends Testbase{
 	}
 	
 	//To verify adduser and click, this return the Add user page
-	public AddUserPage clickadduser() {
+	public AddUserPage clickadduser() {	
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		adduser.click();
 		return new AddUserPage();
 	}

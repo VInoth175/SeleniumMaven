@@ -1,4 +1,4 @@
-package com.webadmin.qa.TestRunnerLoop;
+package com.webadmin.qa.AdminPageTest;
 
 import org.junit.runner.RunWith;
 
@@ -11,9 +11,9 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions
 	//features means where the test case and scenarios where written
-	(features = "C:\\Users\\Vinoth\\git\\repository1\\FrameworkWebAdminTest\\src\\test\\java\\com\\webadmin\\qa\\AddUserTest\\AddUserTest.feature", 
+	(features = "C:\\Users\\Vinoth\\git\\repository1\\FrameworkWebAdminTest\\src\\test\\java\\com\\webadmin\\qa\\AdminPageTest\\AdminPageTest.feature", 
 	//This is for step definition where the feature files methods are written
-	glue= {"com.webadmin.qa.AddUserTest"}, 
+	glue= {"com.webadmin.qa.AdminPageTest"}, 
 	//if dryRun is true, it will verify whether the Feature files steps and methods are matching. If not matching, it wont execute the test case.
 	//If we give false, it will execute even the steps and methods are not matching
 	dryRun = false,
@@ -21,7 +21,7 @@ import cucumber.api.junit.Cucumber;
 	monochrome=true,
 	plugin= {"pretty", "html:test_output/latestrun", "json:json_output/cucumber.json", "junit:junit_output/cucumber.junit"})
 
-public class TestRunnerAddUser {
+public class TestRunnerAdminPage {
 
 	
 }

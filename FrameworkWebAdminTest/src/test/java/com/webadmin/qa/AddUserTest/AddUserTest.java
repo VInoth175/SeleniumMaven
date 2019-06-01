@@ -52,6 +52,7 @@ public class AddUserTest extends Testbase {
 			adduserpage.enteruserdetailadmin(userDetail.get("FirstName"), userDetail.get("LastName"), userDetail.get("Email@"),
 											userDetail.get("Phone#") ,userDetail.get("State"), userDetail.get("UserType"));
 			adduserpage.ClickSaveOnAddUser();
+			Thread.sleep(3000);
 			adduserpage.AddMoreUser();
 			}
 		}

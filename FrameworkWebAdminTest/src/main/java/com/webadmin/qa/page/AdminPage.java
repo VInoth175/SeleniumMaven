@@ -72,7 +72,7 @@ public class AdminPage extends Testbase{
 	
 	//To verify adduser and click, this return the Add user page
 	public AddUserPage clickadduser() {	
-		 WebElement element = (WebElement) driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		 WebElement element = adduser;
 		 if (element.isDisplayed()) {
 			adduser.click();
 			

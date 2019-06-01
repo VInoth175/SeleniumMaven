@@ -46,13 +46,16 @@ public class AddUserTest extends Testbase {
 	{
 		
 	 for(Map<String, String> userDetail: UserDetails) {
-		 
+		 if (userDetail!= null) {
 		 	Thread.sleep(3000);
 			adduserpage.enteruserdetailadmin(userDetail.get("FirstName"), userDetail.get("LastName"), userDetail.get("Email@"),
 											userDetail.get("Phone#") ,userDetail.get("State"), userDetail.get("UserType"));
 			adduserpage.ClickSaveOnAddUser();
 			adduserpage.AddMoreUser();
-			Thread.sleep(5000);
+		 }else {
+			
+			 break; 
+		 	}
 			
 	 	}
 

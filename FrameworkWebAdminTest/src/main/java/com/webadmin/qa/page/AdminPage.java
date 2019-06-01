@@ -3,6 +3,7 @@ package com.webadmin.qa.page;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Timeouts;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -71,8 +72,11 @@ public class AdminPage extends Testbase{
 	
 	//To verify adduser and click, this return the Add user page
 	public AddUserPage clickadduser() {	
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		adduser.click();
+		 WebElement element = (WebElement) driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		 if (element.isDisplayed()) {
+			adduser.click();
+			
+		}
 		return new AddUserPage();
 	}
 	

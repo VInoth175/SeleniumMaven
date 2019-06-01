@@ -42,24 +42,22 @@ public class AddUserTest extends Testbase {
 	}
 
 	@Then("Enter the user detail")
-	public void enter_the_user_detail(List<Map<String, String>> UserDetails) throws Exception
-	{
-		
-	 for(Map<String, String> userDetail: UserDetails) {
-		 if (userDetail!= null) {
+	public void enter_the_user_detail(List<Map<String, String>> UserDetails) throws Exception{
+		if (UserDetails!= null) {
+			for(Map<String, String> userDetail: UserDetails) {
 		 	Thread.sleep(3000);
 			adduserpage.enteruserdetailadmin(userDetail.get("FirstName"), userDetail.get("LastName"), userDetail.get("Email@"),
 											userDetail.get("Phone#") ,userDetail.get("State"), userDetail.get("UserType"));
 			adduserpage.ClickSaveOnAddUser();
 			adduserpage.AddMoreUser();
-		 }else {
-			
-			 break; 
-		 	}
-			
-	 	}
-
+			}
+		}
+	
+	}
+	
+	public void teardown() {
 		
+		driver.quit();
 	}
 	
 	

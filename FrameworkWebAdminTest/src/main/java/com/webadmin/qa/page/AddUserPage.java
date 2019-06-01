@@ -1,11 +1,14 @@
 package com.webadmin.qa.page;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.webadmin.qa.base.Testbase;
+import com.webadmin.qa.util.TestUtil;
 
 public class AddUserPage extends Testbase {
 	
@@ -63,6 +66,7 @@ public class AddUserPage extends Testbase {
 	}
 	
 	public void AddMoreUser() {
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		Addmoreuser.click();
 	 
 		

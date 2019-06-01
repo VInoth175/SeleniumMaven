@@ -38,7 +38,7 @@ public class AddUserTest extends Testbase {
 	
 	@Given("click the Adduser button")
 	public void click_the_Adduser_button() throws Exception {
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		adduserpage = adminpage.clickadduser();
 		
 
@@ -58,6 +58,7 @@ public class AddUserTest extends Testbase {
 	
 	}
 	
+	@Then("Close the Browser")
 	public void teardown() {
 		
 		driver.quit();

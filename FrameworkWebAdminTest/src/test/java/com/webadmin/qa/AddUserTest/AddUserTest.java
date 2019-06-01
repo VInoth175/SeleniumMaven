@@ -2,6 +2,7 @@ package com.webadmin.qa.AddUserTest;
 
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -10,6 +11,7 @@ import com.webadmin.qa.base.Testbase;
 import com.webadmin.qa.page.AddUserPage;
 import com.webadmin.qa.page.AdminPage;
 import com.webadmin.qa.page.LoginPage;
+import com.webadmin.qa.util.TestUtil;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.Before;
@@ -36,6 +38,7 @@ public class AddUserTest extends Testbase {
 	
 	@Given("click the Adduser button")
 	public void click_the_Adduser_button() throws Exception {
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		adduserpage = adminpage.clickadduser();
 		
 

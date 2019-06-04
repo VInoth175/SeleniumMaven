@@ -36,7 +36,7 @@ public class AddUserTest extends Testbase {
 	public void OpenBrowser() {
 		initilialization();
 		loginpage = new LoginPage();
-		//adminpage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
+		adminpage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 	}

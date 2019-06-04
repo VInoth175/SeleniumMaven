@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -11,6 +12,7 @@ import com.webadmin.qa.base.Testbase;
 import com.webadmin.qa.page.AddUserPage;
 import com.webadmin.qa.page.AdminPage;
 import com.webadmin.qa.page.LoginPage;
+import com.webadmin.qa.util.TakeScreenshot;
 import com.webadmin.qa.util.TestUtil;
 
 import cucumber.api.DataTable;
@@ -18,12 +20,15 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
+
+
 public class AddUserTest extends Testbase {
 
 	
 	LoginPage loginpage;
 	AdminPage adminpage;
 	AddUserPage adduserpage;
+	TakeScreenshot tss;
 	
 	
 	
@@ -39,9 +44,7 @@ public class AddUserTest extends Testbase {
 	@Given("click the Adduser button")
 	public void click_the_Adduser_button() throws Exception {
 		//driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		adduserpage = adminpage.clickadduser();
-		
-
+		adduserpage = adminpage.clickadduser();		
 	}
 
 	@Then("Enter the user detail")
@@ -55,6 +58,10 @@ public class AddUserTest extends Testbase {
 			Thread.sleep(3000);
 			adduserpage.AddMoreUser();
 			}
+		}else
+		{
+			tss = new TakeScreenshot();
+			tss.screehshot();
 		}
 	
 	}

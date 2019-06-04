@@ -55,6 +55,7 @@ public class AddUserTest extends Testbase {
 		 	Thread.sleep(3000);
 			adduserpage.enteruserdetailadmin(userDetail.get("FirstName"), userDetail.get("LastName"), userDetail.get("Email@"),
 											userDetail.get("Phone#") ,userDetail.get("State"), userDetail.get("UserType"));
+			Thread.sleep(3000);
 			adduserpage.ClickSaveOnAddUser();
 			Thread.sleep(3000);
 			adduserpage.AddMoreUser();

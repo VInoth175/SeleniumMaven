@@ -51,7 +51,7 @@ public class AddUserTest extends Testbase {
 
 	@Then("Enter the user detail")
 	public void enter_the_user_detail(List<Map<String, String>> UserDetails) throws Exception{
-		if (UserDetails!= null) {
+	//	if (UserDetails!= null) {
 			for(Map<String, String> userDetail: UserDetails) {
 		 	Thread.sleep(3000);
 			adduserpage.enteruserdetailadmin(userDetail.get("FirstName"), userDetail.get("LastName"), userDetail.get("Email@"),
@@ -60,9 +60,9 @@ public class AddUserTest extends Testbase {
 			adduserpage.ClickSaveOnAddUser();
 			Thread.sleep(3000);
 			adduserpage.AddMoreUser();
-			}
-		}else
-		{
+		//	}
+//		}else
+//		{
 			tss = new TakeScreenshot();
 			tss.screehshot();
 		}

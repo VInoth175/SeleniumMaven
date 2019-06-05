@@ -28,9 +28,6 @@ public class Testbase {
 		try {
 			//reading the properties file located in property package
 			prop = new Properties(); //Initializing the prop variable
-			
-			//C:\Users\Vinoth\git\repository1\FrameworkWebAdminTest\src\main\java\com\webadmin\qa\config\config.properties
-			//C:\\Selenium\\Project\\FrameworkWebAdminTest\\src\\main\\java\\com\\webadmin\\qa\\config\\config.properties
 			FileInputStream ip = new FileInputStream("C:\\Users\\Vinoth\\git\\repository1\\FrameworkWebAdminTest\\src\\main\\java\\com\\webadmin\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {

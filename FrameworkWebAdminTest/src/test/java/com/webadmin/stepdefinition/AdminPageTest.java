@@ -1,4 +1,4 @@
-package com.webadmin.qa.AdminPageTest;
+package com.webadmin.stepdefinition;
 
 import org.junit.Assert;
 import com.webadmin.qa.base.Testbase;

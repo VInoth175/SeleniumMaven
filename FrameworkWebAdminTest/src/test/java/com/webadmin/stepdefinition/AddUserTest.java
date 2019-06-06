@@ -1,4 +1,4 @@
-package com.webadmin.qa.AddUserTest;
+package com.webadmin.stepdefinition;
 
 import java.util.List;
 import java.util.Map;

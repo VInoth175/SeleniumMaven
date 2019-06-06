@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-06-06T00:17:25.253Z",
+        "start_timestamp": "2019-06-06T00:38:39.258Z",
         "line": 3,
         "name": "verify the login functionality",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5316389950,
+              "duration": 5381367777,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 31030000,
+              "duration": 59535844,
               "status": "passed"
             },
             "line": 5,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 5534712,
+              "duration": 7546301,
               "status": "passed"
             },
             "line": 6,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 1567654162,
+              "duration": 1690304156,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 684120911,
+              "duration": 641236990,
               "status": "passed"
             },
             "line": 8,

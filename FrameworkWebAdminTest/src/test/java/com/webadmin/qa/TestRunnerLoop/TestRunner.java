@@ -19,7 +19,9 @@ import cucumber.api.junit.Cucumber;
 	dryRun = false,
 	//it will execute well and proper output
 	monochrome=true,
-	plugin= {"pretty", "html:test_output/latestrun", "json:target/cucumber.json", "junit:junit_output/cucumber.junit"})
+	plugin= {"pretty", "html:test_output/latestrun", 
+			"json:target/cucumber.json", 
+			"junit:junit_output/cucumber.junit"})
 
 public class TestRunner {
 

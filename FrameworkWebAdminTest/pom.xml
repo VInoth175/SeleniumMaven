@@ -54,7 +54,7 @@
 						<configuration>
 							<projectname>WebAdminAutomation</projectname>
 							<outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
-							<cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+							<cucumberOutput>${project.build.directory}/target/cucumber.json</cucumberOutput>
 						</configuration>
 						
 				</execution>

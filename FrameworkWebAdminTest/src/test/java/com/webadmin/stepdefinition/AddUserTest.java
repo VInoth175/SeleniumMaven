@@ -12,7 +12,7 @@ import com.webadmin.qa.base.Testbase;
 import com.webadmin.qa.page.AddUserPage;
 import com.webadmin.qa.page.AdminPage;
 import com.webadmin.qa.page.LoginPage;
-import com.webadmin.qa.util.TakeScreenshot;
+//import com.webadmin.qa.util.TakeScreenshot;
 import com.webadmin.qa.util.TestUtil;
 
 import cucumber.api.DataTable;
@@ -28,7 +28,7 @@ public class AddUserTest extends Testbase {
 	LoginPage loginpage;
 	AdminPage adminpage;
 	AddUserPage adduserpage;
-	TakeScreenshot tss;
+//	TakeScreenshot tss;
 	
 	
 	
@@ -63,8 +63,8 @@ public class AddUserTest extends Testbase {
 		//	}
 //		}else
 //		{
-			tss = new TakeScreenshot();
-			tss.screehshot();
+		//	tss = new TakeScreenshot();
+			//tss.screehshot();
 		}
 	
 	}

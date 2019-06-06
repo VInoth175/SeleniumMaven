@@ -20,7 +20,7 @@ import cucumber.api.junit.Cucumber;
 	//it will execute well and proper output
 	monochrome=true,
 	plugin= {"pretty", "html:test_output/latestrun", 
-			"json:target/cucumber.json", 
+			"json:target/json_output/cucumber.json", 
 			"junit:junit_output/cucumber.junit"})
 
 public class TestRunner {

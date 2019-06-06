@@ -54,11 +54,8 @@
 						<configuration>
 							<projectname>WebAdminAutomation</projectname>
 							<outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
-							<cucumberOutput>${project.build.directory}</cucumberOutput>
-							<jsonFiles>
-                                <!-- supports wildcard or name pattern -->
-                                <param>**/*.json</param>
-                            </jsonFiles>
+							<cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+							
 							
 						</configuration>	
 				</execution>

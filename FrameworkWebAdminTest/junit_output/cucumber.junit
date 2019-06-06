@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="7.265403">
-<testcase classname="validate Login" name="verify the login functionality" time="7.265403">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="7.063507">
+<testcase classname="validate Login" name="verify the login functionality" time="7.063507">
 <system-out><![CDATA[Given Access and login to the WebAdmin......................................passed
 Then Validate page Logo.....................................................passed
 Then Validate Page Titile...................................................passed

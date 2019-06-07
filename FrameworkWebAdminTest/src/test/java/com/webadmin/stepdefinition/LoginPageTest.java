@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.webadmin.qa.base.Testbase;
 import com.webadmin.qa.page.AdminPage;
 
-public class LoginPage extends Testbase{
+public class LoginPageTest extends Testbase{
 	
 	//Page Factory or Object repository of Login page
 	
@@ -38,7 +38,7 @@ public class LoginPage extends Testbase{
 	
 	//To Initialize all the above object repository or Page Elements, need to create the constructor
 	
-	public LoginPage()
+	public LoginPageTest()
 	{
 		//This is the class to initiate the elements
 		//Here "this" means, its pointed to current we elements class. Instead of "this", we can also write class name"LoginPage.class"

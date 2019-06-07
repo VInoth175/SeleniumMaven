@@ -53,9 +53,11 @@ public class AddUserTest extends Testbase {
 
 	@Then("Enter the user detail")
 	public void enter_the_user_detail(List<Map<String, String>> UserDetails) throws Exception{
-	//	if (UserDetails!= null) {
-			
-			//TableView control = (TableView) verifyElementExists(userDetail);
+
+			int rowcount=0;
+			int rowsize;
+			rowsize = UserDetails.size();
+			//System.out.println(rowsize);
 			
 			for(Map<String, String> userDetail: UserDetails) {
 		 	Thread.sleep(3000);
@@ -63,15 +65,14 @@ public class AddUserTest extends Testbase {
 											userDetail.get("Phone#") ,userDetail.get("State"), userDetail.get("UserType"));
 			Thread.sleep(3000);
 			adduserpage.ClickSaveOnAddUser();
-			Thread.sleep(3000);
-//			
-			int rowsize;
-			rowsize = UserDetails.size();
-			System.out.println(rowsize);
-			if (rowsize < rowsize-1)
-//			{
-			adduserpage.AddMoreUser();
-//			}
+				
+			if (rowcount < rowsize)
+				{	
+				Thread.sleep(3000);	
+				adduserpage.AddMoreUser();
+				}
+					rowcount++;
+			
 			}
 	
 	}

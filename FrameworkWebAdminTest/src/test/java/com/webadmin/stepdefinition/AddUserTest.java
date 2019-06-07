@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import javax.swing.text.TableView;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -52,6 +54,9 @@ public class AddUserTest extends Testbase {
 	@Then("Enter the user detail")
 	public void enter_the_user_detail(List<Map<String, String>> UserDetails) throws Exception{
 	//	if (UserDetails!= null) {
+			
+			//TableView control = (TableView) verifyElementExists(userDetail);
+			
 			for(Map<String, String> userDetail: UserDetails) {
 		 	Thread.sleep(3000);
 			adduserpage.enteruserdetailadmin(userDetail.get("FirstName"), userDetail.get("LastName"), userDetail.get("Email@"),
@@ -59,13 +64,14 @@ public class AddUserTest extends Testbase {
 			Thread.sleep(3000);
 			adduserpage.ClickSaveOnAddUser();
 			Thread.sleep(3000);
+//			
+//			int rowsize;
+//			rowsize = userDetail.
+//			if (rowsize < rowsize-1)
+//			{
 			adduserpage.AddMoreUser();
-		//	}
-//		}else
-//		{
-		//	tss = new TakeScreenshot();
-			//tss.screehshot();
-		}
+//			}
+			}
 	
 	}
 	

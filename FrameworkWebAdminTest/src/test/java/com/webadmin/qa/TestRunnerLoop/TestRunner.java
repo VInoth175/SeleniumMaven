@@ -16,7 +16,7 @@ import cucumber.api.junit.Cucumber;
 	glue= {"com.webadmin.stepdefinition"}, 
 	//if dryRun is true, it will verify whether the Feature files steps and methods are matching. If not matching, it wont execute the test case.
 	//If we give false, it will execute even the steps and methods are not matching
-	dryRun = false,
+	dryRun = true,
 	//it will execute well and proper output
 	monochrome=true,
 	plugin= {"pretty", "html:test_output/latestrun", 

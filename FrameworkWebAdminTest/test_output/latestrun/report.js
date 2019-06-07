@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:/C:/Users/Vinoth/git/repository1/FrameworkWebAdminTest/src/test/java/com/webadmin/features/AddUserTest.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:AddUserTest.feature");
 formatter.feature({
   "name": "Adding new user",
   "description": "",
@@ -10,7 +10,7 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "click the Adduser button",
@@ -20,7 +20,7 @@ formatter.match({
   "location": "AddUserTest.click_the_Adduser_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Enter the user detail",
@@ -40,7 +40,7 @@ formatter.step({
         "Vinoths",
         "edl236",
         "8798709876",
-        "211wlsdpyg@123.com",
+        "21wlsdpyg@123.com",
         "Admin",
         "Alaska"
       ]
@@ -50,7 +50,7 @@ formatter.step({
         "vin",
         "edl2s7",
         "9876799787",
-        "1e1t4dpfej@dk.com",
+        "1e1tdpfej@dk.com",
         "Admin",
         "Illinois"
       ]
@@ -62,8 +62,7 @@ formatter.match({
   "location": "AddUserTest.enter_the_user_detail(String,String\u003e\u003e)"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d74.0.3729.169)\n  (Driver info: chromedriver\u003d74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027WINDOWS-T924NNG\u0027, ip: \u002710.127.14.229\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\\Users\\Vinoth\\AppData\\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57086}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}\nSession ID: 311a20ce02bb89aa1df4f6acbdf0e4af\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy14.sendKeys(Unknown Source)\r\n\tat com.webadmin.qa.page.AddUserPage.enteruserdetailadmin(AddUserPage.java:52)\r\n\tat com.webadmin.stepdefinition.AddUserTest.enter_the_user_detail(AddUserTest.java:62)\r\n\tat ✽.Enter the user detail(file:/C:/Users/Vinoth/git/repository1/FrameworkWebAdminTest/src/test/java/com/webadmin/features/AddUserTest.feature:7)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Enter the user detail",
@@ -74,5 +73,113 @@ formatter.match({
 });
 formatter.result({
   "status": "skipped"
+});
+formatter.uri("file:AdminPageTest.feature");
+formatter.feature({
+  "name": "Verify the Admin Page",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Validate Admin page",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Open Web Admin website",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Validate the title",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Validate the Search By Name option",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Validate Search By CDL option",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Validate OnCommand logo",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.uri("file:LoginPageTest.feature");
+formatter.feature({
+  "name": "validate Login",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "verify the login functionality",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Access and login to the WebAdmin",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Validate page Logo",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Validate Page Titile",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Validate the Login",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Close the browser",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });

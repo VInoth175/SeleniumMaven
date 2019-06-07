@@ -65,9 +65,10 @@ public class AddUserTest extends Testbase {
 			adduserpage.ClickSaveOnAddUser();
 			Thread.sleep(3000);
 //			
-//			int rowsize;
-//			rowsize = userDetail.
-//			if (rowsize < rowsize-1)
+			int rowsize;
+			rowsize = UserDetails.size();
+			System.out.println(rowsize);
+			if (rowsize < rowsize-1)
 //			{
 			adduserpage.AddMoreUser();
 //			}

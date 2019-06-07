@@ -8,10 +8,31 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 
+//@RunWith(Cucumber.class)
+//@CucumberOptions
+//	//features means where the test case and scenarios where written
+//	(features = "C:\\Users\\Vinoth\\git\\repository1\\FrameworkWebAdminTest\\src\\test\\java\\com\\webadmin\\features", 
+//	//This is for step definition where the feature files methods are written
+//	glue= {"com.webadmin.stepdefinition"}, 
+//	//if dryRun is true, it will verify whether the Feature files steps and methods are matching. If not matching, it wont execute the test case.
+//	//If we give false, it will execute even the steps and methods are not matching
+//	dryRun = true,
+//	//it will execute well and proper output
+//	monochrome=true,
+//	plugin= {"pretty", "html:test_output/latestrun", 
+//			"json:target/json_output/cucumber.json", 
+//			"junit:junit_output/cucumber.junit"})
+//
+//public class TestRunner {}
+
+
+
+//---------------------------------------------------------------------------------------------------------------
+
 @RunWith(Cucumber.class)
 @CucumberOptions
 	//features means where the test case and scenarios where written
-	(features = "C:\\Users\\Vinoth\\git\\repository1\\FrameworkWebAdminTest\\src\\test\\java\\com\\webadmin\\features", 
+	(features = "C:\\Users\\Vinoth\\git\\repository1\\FrameworkWebAdminTest\\src\\test\\java\\com\\webadmin\\features\\AddUserTest.feature", 
 	//This is for step definition where the feature files methods are written
 	glue= {"com.webadmin.stepdefinition"}, 
 	//if dryRun is true, it will verify whether the Feature files steps and methods are matching. If not matching, it wont execute the test case.
@@ -23,10 +44,7 @@ import cucumber.api.junit.Cucumber;
 			"json:target/json_output/cucumber.json", 
 			"junit:junit_output/cucumber.junit"})
 
-public class TestRunner {
-
-	
-}
+public class TestRunner {}
 
 
-
+//------------------------------------------------------------------------------------------------------------

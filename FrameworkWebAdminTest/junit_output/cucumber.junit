@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.003579">
-<testcase classname="Adding new user" name="Verify the add user scenario" time="0.002984">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.007419">
+<testcase classname="Adding new user" name="Verify the add user scenario" time="0.006356">
 <system-out><![CDATA[Given click the Adduser button..............................................skipped
 Then Enter the user detail..................................................skipped
 Then Enter the user detail..................................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Verify the Admin Page" name="Validate Admin page" time="0.000316">
+<testcase classname="Verify the Admin Page" name="Validate Admin page" time="0.000566">
 <system-out><![CDATA[Given Open Web Admin website................................................skipped
 Then Validate the title.....................................................skipped
 Then Validate the Search By Name option.....................................skipped
@@ -14,7 +14,7 @@ Then Validate Search By CDL option..........................................skip
 Then Validate OnCommand logo................................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="validate Login" name="verify the login functionality" time="0.000279">
+<testcase classname="validate Login" name="verify the login functionality" time="0.000497">
 <system-out><![CDATA[Given Access and login to the WebAdmin......................................skipped
 Then Validate page Logo.....................................................skipped
 Then Validate Page Titile...................................................skipped

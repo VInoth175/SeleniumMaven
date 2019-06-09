@@ -156,40 +156,50 @@ formatter.step({
   "name": "Access and login to the WebAdmin",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "LoginPageTest.access_and_login_to_the_WebAdmin()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Validate page Logo",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "LoginPageTest.validate_page_Logo()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Validate Page Titile",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "LoginPageTest.validate_Page_Titile()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Validate the Login",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "LoginPageTest.validate_the_Login()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Close the browser",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "LoginPageTest.close_the_browser()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 });

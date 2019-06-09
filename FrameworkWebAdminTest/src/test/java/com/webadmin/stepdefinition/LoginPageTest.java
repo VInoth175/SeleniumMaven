@@ -21,24 +21,21 @@ public class LoginPageTest extends Testbase{
 	    initilialization();
 		loginpage = new LoginPage();
 		adminpage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
-		
-	    throw new cucumber.api.PendingException();
+
 	}
 
 	@Then("Validate page Logo")
 	public void validate_page_Logo() {
 	   boolean logo = loginpage.validatewebadminlogo();
 	   Assert.assertTrue(logo);
-	    
-	   throw new cucumber.api.PendingException();
+
 	}
 
 	@Then("Validate Page Titile")
 	public void validate_Page_Titile() {
 	    String title = loginpage.validatepagetitle();
 	    Assert.assertEquals(title, title.contains("Admin"));
-	    
-	    throw new cucumber.api.PendingException();
+
 	}
 
 	@Then("Validate the Login")
@@ -54,7 +51,7 @@ public class LoginPageTest extends Testbase{
 	@Then("Close the browser")
 	public void close_the_browser() {
 	    driver.close();
-	    throw new cucumber.api.PendingException();
+
 	}
 
 

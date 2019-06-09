@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.005004">
-<testcase classname="Adding new user" name="Verify the add user scenario" time="0.004152">
-<system-out><![CDATA[Given click the Adduser button..............................................skipped
-Then Enter the user detail..................................................skipped
-Then Enter the user detail..................................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="Verify the Admin Page" name="Validate Admin page" time="0.000419">
-<system-out><![CDATA[Given Open Web Admin website................................................skipped
-Then Validate the title.....................................................skipped
-Then Validate the Search By Name option.....................................skipped
-Then Validate Search By CDL option..........................................skipped
-Then Validate OnCommand logo................................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="validate Login" name="verify the login functionality" time="0.000433">
-<system-out><![CDATA[Given Access and login to the WebAdmin......................................skipped
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="16.455427">
+<testcase classname="validate Login" name="verify the login functionality" time="16.455427">
+<skipped><![CDATA[Given Access and login to the WebAdmin......................................pending
 Then Validate page Logo.....................................................skipped
 Then Validate Page Titile...................................................skipped
 Then Validate the Login.....................................................skipped
 Then Close the browser......................................................skipped
-]]></system-out>
+]]></skipped>
 </testcase>
 </testsuite>

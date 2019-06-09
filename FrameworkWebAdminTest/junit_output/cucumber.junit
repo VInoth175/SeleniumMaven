@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="2" tests="3" time="0.003886">
-<testcase classname="Adding new user" name="Verify the add user scenario" time="0.002453">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="3" time="0.005261">
+<testcase classname="Adding new user" name="Verify the add user scenario" time="0.003657">
 <system-out><![CDATA[Given click the Adduser button..............................................skipped
 Then Enter the user detail..................................................skipped
 Then Enter the user detail..................................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Verify the Admin Page" name="Validate Admin page" time="0.001009">
-<skipped><![CDATA[Given Open Web Admin website................................................undefined
-Then Validate the title.....................................................undefined
-Then Validate the Search By Name option.....................................undefined
-Then Validate Search By CDL option..........................................undefined
-Then Validate OnCommand logo................................................undefined
-]]></skipped>
+<testcase classname="Verify the Admin Page" name="Validate Admin page" time="0.000271">
+<system-out><![CDATA[Given Open Web Admin website................................................skipped
+Then Validate the title.....................................................skipped
+Then Validate the Search By Name option.....................................skipped
+Then Validate Search By CDL option..........................................skipped
+Then Validate OnCommand logo................................................skipped
+]]></system-out>
 </testcase>
-<testcase classname="validate Login" name="verify the login functionality" time="0.000424">
+<testcase classname="validate Login" name="verify the login functionality" time="0.001333">
 <skipped><![CDATA[Given Access and login to the WebAdmin......................................undefined
 Then Validate page Logo.....................................................undefined
 Then Validate Page Titile...................................................undefined

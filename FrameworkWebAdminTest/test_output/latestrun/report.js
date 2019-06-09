@@ -40,7 +40,7 @@ formatter.step({
         "Vinoths",
         "edl236",
         "8798709876",
-        "21wlsdpyg@123.com",
+        "21wlsdpg@123.com",
         "Admin",
         "Alaska"
       ]
@@ -50,7 +50,7 @@ formatter.step({
         "vin",
         "edl2s7",
         "9876799787",
-        "1e1tdpfej@dk.com",
+        "1e1tdp@dk.com",
         "Admin",
         "Illinois"
       ]
@@ -92,41 +92,51 @@ formatter.step({
   "name": "Open Web Admin website",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "AdminPageTest.open_Web_Admin_website()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Validate the title",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "AdminPageTest.validate_the_title()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Validate the Search By Name option",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "AdminPageTest.validate_the_Search_By_Name_option()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Validate Search By CDL option",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "AdminPageTest.validate_Search_By_CDL_option()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Validate OnCommand logo",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "AdminPageTest.validate_OnCommand_logo()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.uri("file:LoginPageTest.feature");
 formatter.feature({

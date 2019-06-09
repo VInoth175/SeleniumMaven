@@ -53,6 +53,12 @@ public class AdminPage extends Testbase{
 	WebElement unassignedeventpage;
 	
 	
+	
+	@FindBy(className="user-profile dropdown-toggle")
+	WebElement userprofile;
+	
+	
+	
 	//Creating the constructor this class. This will initiate all the elements
 	public AdminPage() {
 		PageFactory.initElements(driver, this);	
@@ -110,4 +116,12 @@ public class AdminPage extends Testbase{
 		unassignedeventpage.click();
 		return new UnassignedEventPage();
 	}
+	
+	public boolean clickUserProfile() {
+		userprofile.click();
+		return userprofile.isDisplayed();
+	}
+	
+	
+	
 }
